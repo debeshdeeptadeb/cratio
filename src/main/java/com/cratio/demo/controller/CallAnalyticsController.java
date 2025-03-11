@@ -30,7 +30,7 @@ public class CallAnalyticsController {
             @RequestParam(required = false) Date date,
             @RequestParam(required = false) String employeeName,
             @RequestParam(required = false) String callType) {
-        System.out.println("done");
+
         return service.getFilteredAnalytics(date, employeeName, callType);
     }
 }
